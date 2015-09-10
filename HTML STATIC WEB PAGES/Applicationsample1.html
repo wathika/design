@@ -1,0 +1,40 @@
+<html>
+<head>
+<title>Alphax college.</title>
+</head>
+<body>
+<b>Personal Information</b>:
+<form method="post" action="<?php echo $PHP_SELF;?>">
+First Name:&nbsp<input type="text" size="12" maxlength="12" name="Fname"><br />
+Last Name:&nbsp<input type="text" size="12" maxlength="36" name="Lname"><br />
+Gender:<br />
+Male<input type="radio" value="Male" name="gender">
+<br />
+Female<input type="radio" value="Female" name="gender">
+<br />
+Please choose type of course:
+<br />
+DBIT:<input type="checkbox" value="DBIT" name="course[]">
+<br />
+DCS:<input type="checkbox" value="DCS" name="course[]">
+<br />
+DIT:<input type="checkbox" value="DIT" name="course[]">
+<br />
+<textarea rows="5" cols="20" name="quote" wrap="physical">Enter the subjects of the course:</textarea>
+<br /> 
+Select your mode of study:<br />
+<select name="MofS" size="2">
+<option value="Fulltime">Fulltime</option>
+<option value="Partime">Partime</option>
+<option value="Weekend">Weekend</option></select><br /> 
+Select your preffered means of transport:<br />
+<select name="transport">
+<option value="School van">School van</option>
+<option value="School nissan">School nissan</option>
+<option value="School bus">School bus</option></select>
+<br />
+<br/>
+<input type="submit" value="send"> 
+<input type="reset" value="clear">
+</body>
+</html>
